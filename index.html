@@ -22,6 +22,32 @@
             width: 30px;
             fill: #91929a;
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .tableStyle1 th {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+        }
+
+        .tableStyle2 th,
+        tbody th {
+            background-color: #a6a6a6;
+            color: black;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -69,8 +95,8 @@
                     <h2>Topics menu</h2>
                     <div class="row">
                         <ul role="menubar" class="list-inline menu">
-                            <li><a class="item" href="index-en.html" tabindex="0" aria-posinset="1" aria-setsize="7"
-                                    role="menuitem">Home</a></li>
+                            <li role="menuitem"><a class="item" href="index-en.html" tabindex="0" aria-posinset="1" aria-setsize="7"
+                                    >Home</a></li>
                             <li><a class="item" href="internet-en.html" tabindex="-1" aria-posinset="2" aria-setsize="7"
                                     role="menuitem">Buying</a></li>
                             <li><a class="item" href="intranet-en.html" tabindex="-1" aria-posinset="3" aria-setsize="7"
@@ -114,32 +140,6 @@
                     <p>Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is
                         extremely community-focused, and our agents are too!</p>
                     <h3 id="statsOfHiMax">Stats of HI/Max</h3>
-                    <style>
-                        table {
-                            width: 100%;
-                            border-collapse: collapse;
-                            margin-top: 20px;
-                        }
-
-                        th,
-                        td {
-                            border: 1px solid black;
-                            padding: 8px;
-                            text-align: left;
-                        }
-
-                        .tableStyle1 th {
-                            background-color: #333333;
-                            color: white;
-                            text-align: center;
-                        }
-
-                        .tableStyle2 th, tbody th {
-                            background-color: #a6a6a6;
-                            color: black;
-                            text-align: center;
-                        }
-                    </style>
                     <table aria-label="Stats of HI/Max" role="table">
                         <thead>
                             <tr class="tableStyle1">
