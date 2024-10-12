@@ -40,13 +40,15 @@
             background-color: #333333;
             color: white;
             text-align: center;
+            font-weight:bold;
         }
 
         .tableStyle2 th,
-        tbody th {
+        tbody th, td[headers="year"]{
             background-color: #a6a6a6;
             color: black;
             text-align: center;
+            font-weight:bold;
         }
     </style>
 </head>
@@ -137,32 +139,32 @@
                     <table aria-label="Stats of HI/Max" role="table">
                         <thead>
                             <tr class="tableStyle1">
-                                <th scope="col" rowspan="2">Year</th>
-                                <th scope="col" colspan="2">Sold Properties</th>
-                                <th scope="col" colspan="2">Average selling price</th>
+                                <th id="year" rowspan="2">Year</th>
+                                <th id="soldProperties" colspan="2">Sold Properties</th>
+                                <th id="averageSellingPrice" colspan="2">Average selling price</th>
 
                             </tr>
                             <tr class="tableStyle2">
-                                <th scope="col">Quebec</th>
-                                <th scope="col">Ontario</th>
-                                <th scope="col">Single House</th>
-                                <th scope="col">Condo</th>
+                                <th id="soldPropertiesQuebec" headers="soldProperties">Quebec</th>
+                                <th id="soldPropertiesOntario" headers="soldProperties">Ontario</th>
+                                <th id="averageSellingPriceSingleHouse" headers="averageSellingPrice">Single House</th>
+                                <th id="averageSellingPriceCondo" headers="averageSellingPrice">Condo</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">2021</th>
-                                <td>50</td>
-                                <td>100</td>
-                                <td>$50,000</td>
-                                <td>$189,000</td>
+                                <td headers="year">2021</th>
+                                <td headers="soldProperties soldPropertiesQuebec">50</td>
+                                <td headers="soldProperties soldPropertiesOntario">100</td>
+                                <td headers="averageSellingPrice averageSellingPriceSingleHouse">$50,000</td>
+                                <td headers="averageSellingPrice averageSellingPriceCondo">$189,000</td>
                             </tr>
                             <tr>
-                                <th scope="row">2022</th>
-                                <td>100</td>
-                                <td>200</td>
-                                <td>$78,000</td>
-                                <td>$240,000</td>
+                                <td headers="year">2022</th>
+                                <td headers="soldProperties soldPropertiesQuebec">100</td>
+                                <td headers="soldProperties soldPropertiesOntario">200</td>
+                                <td headers="averageSellingPrice averageSellingPriceSingleHouse">$78,000</td>
+                                <td headers="averageSellingPrice averageSellingPriceCondo">$240,000</td>
                             </tr>
                         </tbody>
                     </table>
